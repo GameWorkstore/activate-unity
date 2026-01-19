@@ -1,4 +1,4 @@
-name: Activate Unity
+name: GameWorkstore Activate Unity
 description: Activate Unity Personal or Professional license on Ubuntu, macOS or Windows
 inputs:
   unity-path:
