@@ -16,6 +16,10 @@ inputs:
   unity-serial:
     description: Unity license serial key. Used for Plus/Professional license activation
     required: false
+  project-path:
+    description: Path to Unity project. Used as part of unity activation command-line
+    required: false
+    default: ${{ github.workspace }}
 runs:
   using: node16
   main: src/activate-license.js
