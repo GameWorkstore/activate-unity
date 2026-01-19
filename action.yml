@@ -19,7 +19,7 @@ inputs:
   project-path:
     description: Path to Unity project. Used as part of unity activation command-line
     required: false
-    default: ${{ github.workspace }}
+    default: ''
 runs:
   using: node16
   main: src/activate-license.js
