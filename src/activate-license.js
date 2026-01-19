@@ -22,7 +22,7 @@ async function run() {
             const licenseRobot = require('./license-robot');
             const licenseRequestFile = await unity.createManualActivationFile(unityPath);
             const licenseData = await licenseRobot.getPersonalLicense(licenseRequestFile, unityUsername, unityPassword, unityAuthenticatorKey);
-            await unity.activateManualLicense(unityPath, licenseData, projectPath);
+            await unity.activateManualLicense(unityPath, licenseData);
         }
     } catch (error) {
         core.setFailed(error.message);
